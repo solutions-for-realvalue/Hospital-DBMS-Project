@@ -83,3 +83,20 @@ CREATE TABLE doctor_treatments (
     FOREIGN KEY (doctor_id) REFERENCES doctor(doctor_id),
     FOREIGN KEY (treatment_id) REFERENCES treatments(treatment_id)
 );
+
+-- **********************************************************************************************
+-- Insert Data into specialization Table
+-- **********************************************************************************************
+INSERT INTO specialization (specialization_name, specialization_description, specialization_department)
+VALUES
+('Psychiatry', 'Mental health', 'Psychiatry'),
+('Cardiology', 'Heart specialist', 'Cardiology'),
+('Ophthalmology', 'Eye specialist', 'Ophthalmology'),
+('Neurology', 'Brain specialist', 'Neurology'),
+('Dermatology', 'Skin specialist', 'Dermatology'),
+('Pediatrics', 'Child specialist', 'Pediatrics'),
+('Orthopedics', 'Bone specialist', 'Orthopedics'),
+('Gastroenterology', 'Digestive system', 'Gastroenterology'),
+('General Surgery', 'Surgical procedures', 'Surgery'),
+('Traumatology', 'Injuries and fractures', 'Orthopedics');
+
