@@ -100,3 +100,21 @@ VALUES
 ('General Surgery', 'Surgical procedures', 'Surgery'),
 ('Traumatology', 'Injuries and fractures', 'Orthopedics');
 
+-- **********************************************************************************************
+-- Insert Data into doctor Table
+-- **********************************************************************************************
+INSERT INTO doctor (specialization_id, doctor_first_name, doctor_last_name, doctor_email, doctor_phone_number)
+VALUES
+(1, 'Lukas', 'Steiner', 'lukas.steiner@example.ch', '+41 79 123 45 67'),
+(2, 'Pierre', 'Dubois', 'pierre.dubois@example.fr', '+33 7 89 01 23 45'),
+(3, 'Maximilian', 'Schmidt', 'max.schmidt@example.de', '+49 151 23456789'),
+(4, 'James', 'Smith', 'james.smith@example.uk', '+44 7700 123456'),
+(5, 'John', 'Williams', 'john.williams@example.com', '+1 202-555-0143'),
+(6, 'Lorenzo', 'Rossi', 'lorenzo.rossi@example.it', '+39 320 1234567'),
+(7, 'Carlos', 'García', 'carlos.garcia@example.es', '+34 612 345 678'),
+(8, 'Daniel', 'Thompson', 'daniel.thompson@example.ca', '+1 416-555-1234'),
+(9, 'Oliver', 'Jones', 'oliver.jones@example.au', '+61 412 345 678'),
+(10, 'Hiroshi', 'Tanaka', 'hiroshi.tanaka@example.jp', '+81 90-1234-5678');
+
+
+
