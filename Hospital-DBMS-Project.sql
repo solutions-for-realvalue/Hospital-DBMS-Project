@@ -116,5 +116,19 @@ VALUES
 (9, 'Oliver', 'Jones', 'oliver.jones@example.au', '+61 412 345 678'),
 (10, 'Hiroshi', 'Tanaka', 'hiroshi.tanaka@example.jp', '+81 90-1234-5678');
 
-
+-- **********************************************************************************************
+-- Insert Data into patient Table
+-- **********************************************************************************************
+INSERT INTO patient (doctor_id, patient_first_name, patient_last_name, patient_date_of_birth, patient_phone_number, patient_email)
+VALUES
+(1, 'Simon', 'Keller', '1980-05-15', '+41 79 987 65 43', 'simon.keller@example.ch'),
+(2, 'Marie', 'Laurent', '1990-08-20', '+33 6 98 76 54 32', 'marie.laurent@example.fr'),
+(3, 'Felix', 'Becker', '1982-11-30', '+49 157 98765432', 'felix.becker@example.de'),
+(4, 'Emma', 'Johnson', '1995-02-14', '+44 7712 345678', 'emma.johnson@example.uk'),
+(5, 'Olivia', 'Davis', '1988-12-05', '+1 303-555-0176', 'olivia.davis@example.com'),
+(6, 'Giulia', 'Bianchi', '1992-03-27', '+39 320 7654321', 'giulia.bianchi@example.it'),
+(7, 'Sofia', 'Martínez', '1987-09-09', '+34 612 987 654', 'sofia.martinez@example.es'),
+(8, 'Chloe', 'Wilson', '1993-06-17', '+1 647-555-6789', 'chloe.wilson@example.ca'),
+(9, 'Jack', 'Robinson', '1991-04-01', '+61 412 987 654', 'jack.robinson@example.au'),
+(10, 'Yui', 'Sato', '1996-12-22', '+81 90-8765-4321', 'yui.sato@example.jp');
 
