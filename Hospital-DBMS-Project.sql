@@ -162,3 +162,17 @@ INSERT INTO treatments (treatment_name, treatment_cost, treatment_description) V
 ('Cystoscopy', 1750.50, 'Examination of the urinary bladder using a cystoscope'),
 ('Cataract Surgery', 3050.00, 'Surgical procedure to remove a cataract and restore vision');
 
+-- **********************************************************************************************
+-- Insert into patient_treatments Table
+-- **********************************************************************************************
+INSERT INTO patient_treatments (patient_id, treatment_id, treatment_insurance_coverage, treatment_prescription, treatment_pharmacy) VALUES
+(1, 1, b'1', 'Aspirin daily', 'City Pharmacy'),
+(2, 2, b'0', 'Follow doctor instructions', 'HealthPlus Pharmacy'),
+(3, 3, b'1', 'Painkillers twice daily', 'MediCare Pharmacy'),
+(4, 4, b'1', 'Booster shot required', 'City Pharmacy'),
+(5, 5, b'0', 'Topical cream application', 'Wellness Pharmacy'),
+(6, 6, b'1', 'Anti-nausea medication', 'City Pharmacy'),
+(7, 7, b'0', 'Dietary restrictions', 'HealthPlus Pharmacy'),
+(8, 8, b'1', 'Weekly therapy sessions', 'MediCare Pharmacy'),
+(9, 9, b'0', 'Urinary analgesics', 'City Pharmacy'),
+(10, 10, b'1', 'Post-op eye drops', 'Vision Pharmacy');
