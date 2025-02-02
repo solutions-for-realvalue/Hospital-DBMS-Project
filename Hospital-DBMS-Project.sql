@@ -206,4 +206,16 @@ SELECT d.doctor_id,
 FROM doctor d
 JOIN specialization s ON d.specialization_id = s.specialization_id;
 
-
+-- Combine appointment details with doctor and patient names
+CREATE VIEW view_appointment_details AS
+SELECT a.appointment_id,
+       a.appointment_date,
+       a.appointment_time,
+       d.doctor_first_name,
+       d.doctor_last_name,
+       p.patient_first_name,
+       p.patient_last_name,
+       a.appointment_type
+FROM appointment a
+JOIN doctor d ON a.doctor_id = d.doctor_id
+JOIN patient p ON a.patient_id = p.patient_id;
