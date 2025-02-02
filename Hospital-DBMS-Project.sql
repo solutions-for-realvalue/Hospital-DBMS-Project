@@ -219,3 +219,18 @@ SELECT a.appointment_id,
 FROM appointment a
 JOIN doctor d ON a.doctor_id = d.doctor_id
 JOIN patient p ON a.patient_id = p.patient_id;
+
+-- Show patient treatments with patient name and treatment info
+CREATE VIEW view_patient_treatment_info AS
+SELECT pt.patient_treatment_id,
+       p.patient_first_name,
+       p.patient_last_name,
+       t.treatment_name,
+       pt.treatment_prescription,
+       pt.treatment_pharmacy
+FROM patient_treatments pt
+JOIN patient p ON pt.patient_id = p.patient_id
+JOIN treatments t ON pt.treatment_id = t.treatment_id;
+
+
+
