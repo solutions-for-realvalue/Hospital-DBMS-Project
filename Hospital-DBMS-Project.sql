@@ -192,6 +192,18 @@ INSERT INTO doctor_treatments (doctor_id, treatment_id, treatment_need_consent, 
 (9, 9, b'1', '2025-02-25', 'Analysis I'),
 (10, 10, b'0', '2025-03-01', 'Investigation J');
 
+-- **********************************************************************************************
+-- Create 3 Views Derived from Multiple Tables
+-- **********************************************************************************************
 
+-- Join doctor and specialization for a complete doctor profile
+CREATE VIEW view_doctor_info AS
+SELECT d.doctor_id,
+       d.doctor_first_name,
+       d.doctor_last_name,
+       s.specialization_name,
+       s.specialization_department
+FROM doctor d
+JOIN specialization s ON d.specialization_id = s.specialization_id;
 
 
