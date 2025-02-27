@@ -168,10 +168,14 @@ Created **three views** to simplify queries across multiple tables.
 📌 **View 1:** ***view_doctor_info*** (Combines Doctor & Specialization)
 
 ```sql
-CREATE VIEW view_doctor_info AS  
-SELECT d.doctor_id, d.name AS doctor_name, s.specialization_name, d.experience_years  
-FROM Doctor d  
-JOIN Specialization s ON d.specialization_id = s.specialization_id;
+CREATE VIEW view_doctor_info AS
+SELECT d.doctor_id,
+       d.doctor_first_name,
+       d.doctor_last_name,
+       s.specialization_name,
+       s.specialization_department
+FROM doctor d
+JOIN specialization s ON d.specialization_id = s.specialization_id;
 ```
 
 📌 **View 2:** ***view_appointment_details*** (Combines Appointment, Doctor, & Patient)
