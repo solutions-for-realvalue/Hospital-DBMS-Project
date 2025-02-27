@@ -194,6 +194,10 @@ FROM doctor d
 JOIN specialization s ON d.specialization_id = s.specialization_id;
 ```
 
+📌 Execution Result:
+
+
+
 📌 **View 2:** ***view_appointment_details*** (Combines Appointment, Doctor, & Patient)
 
 ```sql
@@ -210,6 +214,10 @@ FROM appointment a
 JOIN doctor d ON a.doctor_id = d.doctor_id
 JOIN patient p ON a.patient_id = p.patient_id;
 ```
+
+📌 Execution Result:
+
+
 
 📌 **View 3:** ***view_patient_treatment_info*** (Combines Treatments & Patients)
 
