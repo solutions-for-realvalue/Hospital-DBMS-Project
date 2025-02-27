@@ -53,7 +53,7 @@ The **Hospital DBMS** contains the following main tables:
 
 📌 **ER Diagram:**
 
-![Screenshot 2025-02-26 223840](https://github.com/user-attachments/assets/344a404b-6633-4e0e-8166-81f600eb0abe)
+![ER_Diagram](https://github.com/user-attachments/assets/75a4fda2-08c7-45e1-ad89-ec0ecb532e62)
 
 ---
 
