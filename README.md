@@ -13,7 +13,17 @@ This repository contains:
 
 ## 📂 Repository Structure  
 
-
+```
+Hospital-DBMS/
+│── README.md # Overview of the project
+│── Hospital-DBMS-Project.sql # SQL scripts for tables, views, and queries
+│── ER diagram # ER diagram & query execution screenshots
+│── Screenshots/ # Query execution results in MySQL Workbench
+│ ├── Insert_Records.png
+│ ├── View_Doctor_Info.png
+│ ├── Join_Doctor_Specialization.png
+│ ├── ... (Other execution results)
+```
 
 ---
 
