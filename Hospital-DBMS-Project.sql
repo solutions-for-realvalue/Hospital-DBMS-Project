@@ -324,3 +324,12 @@ INNER JOIN doctor d ON p.doctor_id = d.doctor_id
 INNER JOIN doctor_treatments dt ON d.doctor_id = dt.doctor_id
 INNER JOIN treatments t ON dt.treatment_id = t.treatment_id;
 
+-- Left join: Doctor with Appointment (showing all doctors even without appointments)
+SELECT d.doctor_first_name, d.doctor_last_name, a.appointment_date
+FROM doctor d
+LEFT JOIN appointment a ON d.doctor_id = a.doctor_id;
+
+-- Join with Subquery: Count appointments per doctor
+SELECT d.doctor_first_name, d.doctor_last_name, 
+       (SELECT COUNT(*) FROM appointment a WHERE a.doctor_id = d.doctor_id) AS appointment_count
+FROM doctor d;
