@@ -198,12 +198,16 @@ JOIN patient p ON a.patient_id = p.patient_id;
 📌 **View 3:** ***view_patient_treatment_info*** (Combines Treatments & Patients)
 
 ```sql
-CREATE VIEW view_patient_treatment_info AS  
-SELECT pt.patient_id, p.name AS patient_name, t.treatment_name  
-FROM Patient_Treatments pt  
-JOIN Patient p ON pt.patient_id = p.patient_id  
-JOIN Treatments t ON pt.treatment_id = t.treatment_id;
-
+CREATE VIEW view_patient_treatment_info AS
+SELECT pt.patient_treatment_id,
+       p.patient_first_name,
+       p.patient_last_name,
+       t.treatment_name,
+       pt.treatment_prescription,
+       pt.treatment_pharmacy
+FROM patient_treatments pt
+JOIN patient p ON pt.patient_id = p.patient_id
+JOIN treatments t ON pt.treatment_id = t.treatment_id;
 ```
 
 📌 Execution Result:
