@@ -250,12 +250,20 @@ SELECT * FROM view_doctor_info WHERE specialization_department = "Orthopedics";
 SELECT * FROM view_doctor_info WHERE specialization_name = 'Cardiology';
 ```
 
+📌 Execution Result:
+
+
+
 ✅ **Queries for** ***view_appointment_details***
 
 ```sql
 SELECT * FROM view_appointment_details ORDER BY appointment_date DESC;
 SELECT * FROM view_appointment_details WHERE appointment_type = 'Consultation';
 ```
+
+📌 Execution Result:
+
+
 
 ✅ **Queries for** ***view_patient_treatment_info***
 
@@ -266,7 +274,7 @@ SELECT * FROM view_patient_treatment_info WHERE treatment_pharmacy = 'City Pharm
 
 📌 Execution Result:
 
-```sql
-SELECT * FROM view_appointment_details WHERE date > '2025-02-01';
-```
+
+
+
 
