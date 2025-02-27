@@ -232,5 +232,18 @@ FROM patient_treatments pt
 JOIN patient p ON pt.patient_id = p.patient_id
 JOIN treatments t ON pt.treatment_id = t.treatment_id;
 
+-- **********************************************************************************************
+-- For each view, write 2 representative queries that will extract meaningful data from them
+-- **********************************************************************************************
+-- Queries for view_doctor_info view
+SELECT * FROM view_doctor_info WHERE specialization_department = "Orthopedics";
+SELECT * FROM view_doctor_info WHERE specialization_name = 'Cardiology';
 
+-- Queries for view_appointment_details view
+SELECT * FROM view_appointment_details ORDER BY appointment_date DESC;
+SELECT * FROM view_appointment_details WHERE appointment_type = 'Consultation';
+
+-- Queries for view_patient_treatment_info view
+SELECT * FROM view_patient_treatment_info WHERE treatment_name = "Chemotherapy";
+SELECT * FROM view_patient_treatment_info WHERE treatment_pharmacy = 'City Pharmacy';
 
