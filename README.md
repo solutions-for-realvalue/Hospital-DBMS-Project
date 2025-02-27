@@ -212,17 +212,20 @@ JOIN treatments t ON pt.treatment_id = t.treatment_id;
 
 📌 Execution Result:
 
-
 ## 3️⃣ Queries for Views (Objective 3)
 
 ✅ **Queries for** ***view_doctor_info***
 
 ```sql
+SELECT * FROM view_doctor_info WHERE specialization_department = "Orthopedics";
 SELECT * FROM view_doctor_info WHERE specialization_name = 'Cardiology';
 ```
 
+✅ **Queries for** ***view_appointment_details***
+
 ```sql
-SELECT doctor_name, experience_years FROM view_doctor_info ORDER BY experience_years DESC;
+SELECT * FROM view_appointment_details ORDER BY appointment_date DESC;
+SELECT * FROM view_appointment_details WHERE appointment_type = 'Consultation';
 ```
 
 ✅ Queries for view_appointment_details
@@ -232,7 +235,8 @@ SELECT * FROM view_appointment_details WHERE date > '2025-02-01';
 ```
 
 ```sql
-SELECT doctor_name, COUNT(*) AS total_appointments FROM view_appointment_details GROUP BY doctor_name;
+SELECT * FROM view_patient_treatment_info WHERE treatment_name = "Chemotherapy";
+SELECT * FROM view_patient_treatment_info WHERE treatment_pharmacy = 'City Pharmacy';
 ```
 
 📌 Execution Result:
