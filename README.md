@@ -109,10 +109,15 @@ SELECT doctor_name, experience_years FROM view_doctor_info ORDER BY experience_y
 
 ✅ Queries for view_appointment_details
 
+```sql
+SELECT * FROM view_appointment_details WHERE date > '2025-02-01';
+```
 
+```sql
+SELECT doctor_name, COUNT(*) AS total_appointments FROM view_appointment_details GROUP BY doctor_name;
+```
 
-
-
+📌 Execution Result:
 
 
 
