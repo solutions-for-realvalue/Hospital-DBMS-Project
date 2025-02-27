@@ -117,7 +117,17 @@ INSERT INTO appointment (doctor_id, patient_id, appointment_date, appointment_ti
 
 📌 Insert data into `treatments` table  
 ```sql
-
+INSERT INTO treatments (treatment_name, treatment_cost, treatment_description) VALUES
+('Angioplasty', 15236.10, 'Procedure to restore blood flow in blocked arteries'),
+('EEG', 485.50, 'Electroencephalogram test to measure brain activity'),
+('Knee Replacement', 24789.95, 'Surgical procedure to replace a knee joint with a prosthesis'),
+('Vaccination', 95.25, 'Injection to stimulate immune response and provide immunity'),
+('Skin Biopsy', 730.75, 'Procedure to sample skin tissue for diagnostic analysis'),
+('Chemotherapy', 19850.00, 'Cancer treatment using chemical substances to destroy cancer cells'),
+('Colonoscopy', 1250.00, 'Endoscopic examination of the colon to detect abnormalities'),
+('Psychotherapy', 210.00, 'Talk therapy sessions focused on mental health and emotional well-being'),
+('Cystoscopy', 1750.50, 'Examination of the urinary bladder using a cystoscope'),
+('Cataract Surgery', 3050.00, 'Surgical procedure to remove a cataract and restore vision');
 ```
 
 📌 **Execution Result**:
