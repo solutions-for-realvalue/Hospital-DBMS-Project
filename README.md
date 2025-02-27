@@ -181,11 +181,18 @@ JOIN specialization s ON d.specialization_id = s.specialization_id;
 📌 **View 2:** ***view_appointment_details*** (Combines Appointment, Doctor, & Patient)
 
 ```sql
-CREATE VIEW view_appointment_details AS  
-SELECT a.appointment_id, p.name AS patient_name, d.name AS doctor_name, a.date, a.time  
-FROM Appointment a  
-JOIN Patient p ON a.patient_id = p.patient_id  
-JOIN Doctor d ON a.doctor_id = d.doctor_id;
+CREATE VIEW view_appointment_details AS
+SELECT a.appointment_id,
+       a.appointment_date,
+       a.appointment_time,
+       d.doctor_first_name,
+       d.doctor_last_name,
+       p.patient_first_name,
+       p.patient_last_name,
+       a.appointment_type
+FROM appointment a
+JOIN doctor d ON a.doctor_id = d.doctor_id
+JOIN patient p ON a.patient_id = p.patient_id;
 ```
 
 📌 **View 3:** ***view_patient_treatment_info*** (Combines Treatments & Patients)
