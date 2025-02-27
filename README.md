@@ -145,9 +145,19 @@ INSERT INTO patient_treatments (patient_id, treatment_id, treatment_insurance_co
 (10, 10, b'1', 'Post-op eye drops', 'Vision Pharmacy');
 ```
 
-📌 Insert data into `treatments` table  
+📌 Insert data into `doctor_treatments` table  
 ```sql
-
+INSERT INTO doctor_treatments (doctor_id, treatment_id, treatment_need_consent, treatment_date, treatment_research) VALUES
+(1, 1, b'1', '2025-01-15', 'Study A'),
+(2, 2, b'0', '2025-01-20', 'Research B'),
+(3, 3, b'1', '2025-01-25', 'Trial C'),
+(4, 4, b'0', '2025-01-30', 'Analysis D'),
+(5, 5, b'1', '2025-02-05', 'Investigation E'),
+(6, 6, b'0', '2025-02-10', 'Study F'),
+(7, 7, b'1', '2025-02-15', 'Research G'),
+(8, 8, b'0', '2025-02-20', 'Trial H'),
+(9, 9, b'1', '2025-02-25', 'Analysis I'),
+(10, 10, b'0', '2025-03-01', 'Investigation J');
 ```
 
 📌 **Execution Result**:
