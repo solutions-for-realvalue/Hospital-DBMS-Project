@@ -49,4 +49,12 @@ The **Hospital DBMS** contains the following main tables:
 ### 1️⃣ **Data Insertion (Objective 1)**  
 Inserted **at least 10 records** into each table, ensuring realistic data for a functioning hospital system.  
 
+📌 **Example:** Insert data into `Doctor` table  
+```sql
+INSERT INTO Doctor (doctor_id, name, specialization_id, experience_years)
+VALUES (1, 'Dr. John Smith', 2, 10),
+       (2, 'Dr. Emily Carter', 1, 8),
+       (3, 'Dr. Daniel Lee', 3, 15);
+
+
 
