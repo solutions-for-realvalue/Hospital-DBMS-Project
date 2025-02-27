@@ -15,5 +15,15 @@ This repository contains:
 
 
 
+---
 
+## 🎯 Project Objectives  
+
+✅ **Objective 1:** Insert at least **10 records** into each main table.  
+✅ **Objective 2:** Create **3 views** derived from multiple tables.  
+✅ **Objective 3:** Write **2 queries per view** demonstrating SQL operations.  
+✅ **Objective 4:** Write **2 queries per main entity table** to extract meaningful insights.  
+✅ **Objective 5:** Write **10 SQL queries using JOIN operations** across multiple tables.  
+
+---
 
