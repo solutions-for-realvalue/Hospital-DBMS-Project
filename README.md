@@ -55,6 +55,42 @@ INSERT INTO Doctor (doctor_id, name, specialization_id, experience_years)
 VALUES (1, 'Dr. John Smith', 2, 10),
        (2, 'Dr. Emily Carter', 1, 8),
        (3, 'Dr. Daniel Lee', 3, 15);
+```
 
+📌 **Execution Result**:
 
+### 2️⃣ **Views (Objective 2)**
+Created **three views** to simplify queries across multiple tables.
+
+📌 **View 1:** ***view_doctor_info*** (Combines Doctor & Specialization)
+
+```sql
+CREATE VIEW view_doctor_info AS  
+SELECT d.doctor_id, d.name AS doctor_name, s.specialization_name, d.experience_years  
+FROM Doctor d  
+JOIN Specialization s ON d.specialization_id = s.specialization_id;
+```
+
+📌 **View 2:** ***view_appointment_details*** (Combines Appointment, Doctor, & Patient)
+
+```sql
+CREATE VIEW view_appointment_details AS  
+SELECT a.appointment_id, p.name AS patient_name, d.name AS doctor_name, a.date, a.time  
+FROM Appointment a  
+JOIN Patient p ON a.patient_id = p.patient_id  
+JOIN Doctor d ON a.doctor_id = d.doctor_id;
+```
+
+📌 **View 3:** ***view_patient_treatment_info*** (Combines Treatments & Patients)
+
+```sql
+CREATE VIEW view_patient_treatment_info AS  
+SELECT pt.patient_id, p.name AS patient_name, t.treatment_name  
+FROM Patient_Treatments pt  
+JOIN Patient p ON pt.patient_id = p.patient_id  
+JOIN Treatments t ON pt.treatment_id = t.treatment_id;
+
+```
+
+📌 Execution Result:
 
