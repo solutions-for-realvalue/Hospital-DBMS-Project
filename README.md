@@ -39,8 +39,9 @@ The **Hospital DBMS** contains the following main tables:
 - **Patient_Treatments:** Links patients to their received treatments. 
 - **Doctor_Treatments:** Links doctors to the treatments they provide.
 
-📌 **ER Diagram:** *(Refer to the PDF for full details.)*  
-![ER Diagram](Screenshots/ER_Diagram.png)  
+📌 **ER Diagram:**
+![Screenshot 2025-02-26 223840](https://github.com/user-attachments/assets/344a404b-6633-4e0e-8166-81f600eb0abe)
+
 
 ---
 
