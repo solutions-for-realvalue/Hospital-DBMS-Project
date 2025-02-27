@@ -228,11 +228,7 @@ SELECT * FROM view_appointment_details ORDER BY appointment_date DESC;
 SELECT * FROM view_appointment_details WHERE appointment_type = 'Consultation';
 ```
 
-✅ Queries for view_appointment_details
-
-```sql
-SELECT * FROM view_appointment_details WHERE date > '2025-02-01';
-```
+✅ **Queries for** ***view_patient_treatment_info***
 
 ```sql
 SELECT * FROM view_patient_treatment_info WHERE treatment_name = "Chemotherapy";
@@ -241,5 +237,7 @@ SELECT * FROM view_patient_treatment_info WHERE treatment_pharmacy = 'City Pharm
 
 📌 Execution Result:
 
-
+```sql
+SELECT * FROM view_appointment_details WHERE date > '2025-02-01';
+```
 
