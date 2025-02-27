@@ -39,5 +39,14 @@ The **Hospital DBMS** contains the following main tables:
 - **Patient_Treatments:** Links patients to their received treatments. 
 - **Doctor_Treatments:** Links doctors to the treatments they provide.
 
+📌 **ER Diagram:** *(Refer to the PDF for full details.)*  
+![ER Diagram](Screenshots/ER_Diagram.png)  
+
+---
+
+## 🛠️ SQL Implementation  
+
+### 1️⃣ **Data Insertion (Objective 1)**  
+Inserted **at least 10 records** into each table, ensuring realistic data for a functioning hospital system.  
 
 
