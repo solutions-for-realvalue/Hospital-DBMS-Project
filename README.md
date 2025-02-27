@@ -172,6 +172,12 @@ INSERT INTO doctor_treatments (doctor_id, treatment_id, treatment_need_consent, 
 
 📌 **Execution Result**:
 
+![InsertRecors1](https://github.com/user-attachments/assets/2c0d1c67-c308-497e-bea1-54bb02236bd3)
+
+![InsertRecors](https://github.com/user-attachments/assets/13294aff-dff4-43df-8ac8-d909f61ab382)
+
+
+
 ### 2️⃣ **Views (Objective 2)**
 Created **three views** to simplify queries across multiple tables.
 
