@@ -52,7 +52,23 @@ The **Hospital DBMS** contains the following main tables:
 ### 1️⃣ **Data Insertion (Objective 1)**  
 Inserted **at least 10 records** into each table, ensuring realistic data for a functioning hospital system.  
 
-📌 **Example:** Insert data into `Doctor` table  
+📌 Insert data into `specialization` table  
+```sql
+INSERT INTO specialization (specialization_name, specialization_description, specialization_department)
+VALUES
+('Psychiatry', 'Mental health', 'Psychiatry'),
+('Cardiology', 'Heart specialist', 'Cardiology'),
+('Ophthalmology', 'Eye specialist', 'Ophthalmology'),
+('Neurology', 'Brain specialist', 'Neurology'),
+('Dermatology', 'Skin specialist', 'Dermatology'),
+('Pediatrics', 'Child specialist', 'Pediatrics'),
+('Orthopedics', 'Bone specialist', 'Orthopedics'),
+('Gastroenterology', 'Digestive system', 'Gastroenterology'),
+('General Surgery', 'Surgical procedures', 'Surgery'),
+('Traumatology', 'Injuries and fractures', 'Orthopedics');
+```
+
+📌 Insert data into `doctor` table  
 ```sql
 INSERT INTO doctor (specialization_id, doctor_first_name, doctor_last_name, doctor_email, doctor_phone_number)
 VALUES
@@ -66,6 +82,11 @@ VALUES
 (8, 'Daniel', 'Thompson', 'daniel.thompson@example.ca', '+1 416-555-1234'),
 (9, 'Oliver', 'Jones', 'oliver.jones@example.au', '+61 412 345 678'),
 (10, 'Hiroshi', 'Tanaka', 'hiroshi.tanaka@example.jp', '+81 90-1234-5678');
+```
+
+📌 Insert data into `patient` table  
+```sql
+
 ```
 
 📌 **Execution Result**:
