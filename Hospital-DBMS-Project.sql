@@ -293,3 +293,20 @@ SELECT d.doctor_first_name, d.doctor_last_name, a.appointment_date
 FROM appointment a
 RIGHT JOIN doctor d ON a.doctor_id = d.doctor_id;
 
+-- Inner join: Appointment with Patient
+SELECT a.appointment_id, a.appointment_date, p.patient_first_name, p.patient_last_name
+FROM appointment a
+INNER JOIN patient p ON a.patient_id = p.patient_id;
+
+-- Join: Doctor, Patient, Patient Treatments, and Treatments
+SELECT d.doctor_first_name, d.doctor_last_name, p.patient_first_name, p.patient_last_name, t.treatment_name
+FROM doctor d
+INNER JOIN patient p ON d.doctor_id = p.doctor_id
+INNER JOIN patient_treatments pt ON p.patient_id = pt.patient_id
+INNER JOIN treatments t ON pt.treatment_id = t.treatment_id;
+
+-- Join: Doctor Treatments with Doctor and Treatments
+SELECT d.doctor_first_name, d.doctor_last_name, t.treatment_name, dt.treatment_date
+FROM doctor_treatments dt
+INNER JOIN doctor d ON dt.doctor_id = d.doctor_id
+INNER JOIN treatments t ON dt.treatment_id = t.treatment_id;
