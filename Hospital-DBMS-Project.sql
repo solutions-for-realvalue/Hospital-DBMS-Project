@@ -310,3 +310,17 @@ SELECT d.doctor_first_name, d.doctor_last_name, t.treatment_name, dt.treatment_d
 FROM doctor_treatments dt
 INNER JOIN doctor d ON dt.doctor_id = d.doctor_id
 INNER JOIN treatments t ON dt.treatment_id = t.treatment_id;
+
+-- Join: Appointment with Doctor and Specialization
+SELECT a.appointment_id, a.appointment_date, d.doctor_first_name, d.doctor_last_name, s.specialization_name
+FROM appointment a
+INNER JOIN doctor d ON a.doctor_id = d.doctor_id
+INNER JOIN specialization s ON d.specialization_id = s.specialization_id;
+
+-- Join: Patient with Doctor and Doctor Treatments (via doctor)
+SELECT p.patient_first_name, p.patient_last_name, dt.treatment_date, t.treatment_name
+FROM patient p
+INNER JOIN doctor d ON p.doctor_id = d.doctor_id
+INNER JOIN doctor_treatments dt ON d.doctor_id = dt.doctor_id
+INNER JOIN treatments t ON dt.treatment_id = t.treatment_id;
+
