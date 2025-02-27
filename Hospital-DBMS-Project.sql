@@ -247,3 +247,30 @@ SELECT * FROM view_appointment_details WHERE appointment_type = 'Consultation';
 SELECT * FROM view_patient_treatment_info WHERE treatment_name = "Chemotherapy";
 SELECT * FROM view_patient_treatment_info WHERE treatment_pharmacy = 'City Pharmacy';
 
+-- **********************************************************************************************
+-- Write 2 representative queries for each of the main entity tables. Each query should
+-- demonstrate different SQL statements learned in class.
+-- **********************************************************************************************
+
+-- For specialization table
+SELECT * FROM specialization WHERE specialization_department = 'Surgery';
+SELECT COUNT(*) AS total_specializations FROM specialization;
+
+-- For doctor table
+SELECT * FROM doctor WHERE doctor_last_name LIKE 'S%';
+UPDATE doctor SET doctor_phone_number = '123-456-7890' WHERE doctor_email = 'james.smith@example.uk';
+
+-- For patient table
+SELECT patient_first_name, patient_last_name, patient_date_of_birth FROM patient WHERE patient_date_of_birth < '1990-01-01';
+UPDATE patient SET patient_phone_number = '987-654-3210' WHERE patient_email = 'simon.keller@example.ch';
+
+-- For appointment table
+SELECT * FROM appointment WHERE appointment_type = 'Follow-up';
+DELETE FROM appointment WHERE appointment_id = 10;
+
+-- For treatments table
+SELECT * FROM treatments WHERE treatment_cost > 500.00;
+UPDATE treatments SET treatment_description = 'Updated treatment info' WHERE treatment_id = 6;
+
+
+
