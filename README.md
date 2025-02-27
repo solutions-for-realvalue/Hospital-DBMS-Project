@@ -27,3 +27,17 @@ This repository contains:
 
 ---
 
+## 🗄️ Database Schema  
+
+The **Hospital DBMS** contains the following main tables:  
+
+- **Specialization:** Stores medical specializations available at the hospital.
+- **Doctor:** Stores information about doctors and their assigned specializations.
+- **Patient:** Stores patient information.
+- **Appointment:** Manages scheduled appointments between doctors and patients.
+- **Treatments:** Contains medical treatments available at the hospital.
+- **Patient_Treatments:** Links patients to their received treatments. 
+- **Doctor_Treatments:** Links doctors to the treatments they provide.
+
+
+
