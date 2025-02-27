@@ -258,10 +258,10 @@ SELECT * FROM view_doctor_info WHERE specialization_name = 'Cardiology';
 
 ✅ **Queries for** ***view_appointment_details***
 
-```sql
+<!-- ```sql
 SELECT * FROM view_appointment_details ORDER BY appointment_date DESC;
 SELECT * FROM view_appointment_details WHERE appointment_type = 'Consultation';
-```
+``` -->
 
 📌 Execution Result:
 
