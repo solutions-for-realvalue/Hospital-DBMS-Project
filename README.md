@@ -196,6 +196,7 @@ JOIN specialization s ON d.specialization_id = s.specialization_id;
 
 📌 Execution Result:
 
+![view1](https://github.com/user-attachments/assets/2aead2a2-e3d6-40c2-a4a6-8d6fe0314fc9)
 
 
 📌 **View 2:** ***view_appointment_details*** (Combines Appointment, Doctor, & Patient)
@@ -217,6 +218,7 @@ JOIN patient p ON a.patient_id = p.patient_id;
 
 📌 Execution Result:
 
+![view2](https://github.com/user-attachments/assets/a2894c37-0fc5-4c11-b0cf-d8d042998045)
 
 
 📌 **View 3:** ***view_patient_treatment_info*** (Combines Treatments & Patients)
@@ -235,6 +237,9 @@ JOIN treatments t ON pt.treatment_id = t.treatment_id;
 ```
 
 📌 Execution Result:
+
+![view3](https://github.com/user-attachments/assets/5f6f920a-77d9-4326-a37b-8b7f61bd9ba3)
+
 
 ## 3️⃣ Queries for Views (Objective 3)
 
