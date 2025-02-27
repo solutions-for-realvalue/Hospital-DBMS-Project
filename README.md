@@ -94,3 +94,25 @@ JOIN Treatments t ON pt.treatment_id = t.treatment_id;
 
 📌 Execution Result:
 
+
+## 3️⃣ Queries for Views (Objective 3)
+
+✅ **Queries for** ***view_doctor_info***
+
+```sql
+SELECT * FROM view_doctor_info WHERE specialization_name = 'Cardiology';
+```
+
+```sql
+SELECT doctor_name, experience_years FROM view_doctor_info ORDER BY experience_years DESC;
+```
+
+✅ Queries for view_appointment_details
+
+
+
+
+
+
+
+
