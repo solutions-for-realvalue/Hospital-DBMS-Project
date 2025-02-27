@@ -102,6 +102,21 @@ VALUES
 
 📌 Insert data into `appointment` table  
 ```sql
+INSERT INTO appointment (doctor_id, patient_id, appointment_date, appointment_time, appointment_type) VALUES
+(1, 1, '2025-02-19', '08:12:00', 'Consultation'),
+(2, 2, '2025-02-20', '10:37:00', 'Follow-up'),
+(3, 3, '2025-02-21', '11:05:00', 'Consultation'),
+(4, 4, '2025-02-22', '14:22:00', 'Emergency'),
+(5, 5, '2025-02-23', '15:27:00', 'Routine Check'),
+(6, 6, '2025-02-24', '09:45:00', 'Consultation'),
+(7, 7, '2025-02-25', '08:55:00', 'Follow-up'),
+(8, 8, '2025-02-26', '12:30:00', 'Consultation'),
+(9, 9, '2025-02-27', '13:40:00', 'Emergency'),
+(10, 10, '2025-02-28', '16:00:00', 'Routine Check');
+```
+
+📌 Insert data into `treatments` table  
+```sql
 
 ```
 
