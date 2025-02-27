@@ -272,5 +272,24 @@ DELETE FROM appointment WHERE appointment_id = 10;
 SELECT * FROM treatments WHERE treatment_cost > 500.00;
 UPDATE treatments SET treatment_description = 'Updated treatment info' WHERE treatment_id = 6;
 
+-- **********************************************************************************************
+-- Write 10 representative queries that involve joining at least 2 tables. These queries should
+-- demonstrate your ability to perform inner joins, outer joins, etc., to extract and combine
+-- relevant data from multiple tables.
+-- **********************************************************************************************
 
+-- Inner join: Doctor with Specialization
+SELECT d.doctor_first_name, d.doctor_last_name, s.specialization_name
+FROM doctor d
+INNER JOIN specialization s ON d.specialization_id = s.specialization_id;
+
+-- Left join: Patient with Doctor
+SELECT p.patient_first_name, p.patient_last_name, d.doctor_first_name AS doctor_fname, d.doctor_last_name AS doctor_lname
+FROM patient p
+LEFT JOIN doctor d ON p.doctor_id = d.doctor_id;
+
+-- Right join: Appointment with Doctor
+SELECT d.doctor_first_name, d.doctor_last_name, a.appointment_date
+FROM appointment a
+RIGHT JOIN doctor d ON a.doctor_id = d.doctor_id;
 
