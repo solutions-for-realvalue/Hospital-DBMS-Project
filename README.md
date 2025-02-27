@@ -252,7 +252,8 @@ SELECT * FROM view_doctor_info WHERE specialization_name = 'Cardiology';
 
 📌 Execution Result:
 
-
+![query11](https://github.com/user-attachments/assets/7a866466-c93b-4c14-ab33-58f24bd5dddf)
+![query12](https://github.com/user-attachments/assets/9d5967e8-3adf-4fa2-8337-7d695d75473c)
 
 ✅ **Queries for** ***view_appointment_details***
 
@@ -263,7 +264,8 @@ SELECT * FROM view_appointment_details WHERE appointment_type = 'Consultation';
 
 📌 Execution Result:
 
-
+![query21](https://github.com/user-attachments/assets/eac2848b-a9ac-489d-a32a-7f200b90cce2)
+![query22](https://github.com/user-attachments/assets/f5d96c32-694f-46da-b049-d31682827b0f)
 
 ✅ **Queries for** ***view_patient_treatment_info***
 
@@ -274,6 +276,8 @@ SELECT * FROM view_patient_treatment_info WHERE treatment_pharmacy = 'City Pharm
 
 📌 Execution Result:
 
+![query31](https://github.com/user-attachments/assets/9477d8ea-5666-4924-bf82-eb9d596df6f9)
+![query32](https://github.com/user-attachments/assets/edf020f3-f160-4fe7-9816-922a7b051b10)
 
 
 
