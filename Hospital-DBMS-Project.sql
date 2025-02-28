@@ -28,3 +28,14 @@ CREATE TABLE doctor (
     FOREIGN KEY (specialization_id) REFERENCES specialization(specialization_id)
 );
 
+-- Patient Table
+CREATE TABLE patient (
+    patient_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    doctor_id INT NOT NULL,
+    patient_first_name VARCHAR(50) NOT NULL,
+    patient_last_name VARCHAR(50) NOT NULL,
+    patient_date_of_birth DATE NOT NULL,
+    patient_phone_number VARCHAR(20) UNIQUE NOT NULL,
+    patient_email VARCHAR(100) UNIQUE NOT NULL,
+    FOREIGN KEY (doctor_id) REFERENCES doctor(doctor_id)
+);
