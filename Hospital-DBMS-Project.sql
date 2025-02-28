@@ -59,3 +59,16 @@ CREATE TABLE treatments (
     treatment_cost DECIMAL(8, 2) NOT NULL,
     treatment_description TEXT NOT NULL
 );
+
+-- Patient Treatments Table
+CREATE TABLE patient_treatments (
+    patient_treatment_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    patient_id INT NOT NULL,
+    treatment_id INT NOT NULL,
+    treatment_insurance_coverage TINYINT(1) NOT NULL,
+    treatment_prescription VARCHAR(100) NOT NULL,
+    treatment_pharmacy VARCHAR(50) NOT NULL,
+    FOREIGN KEY (patient_id) REFERENCES patient(patient_id),
+    FOREIGN KEY (treatment_id) REFERENCES treatments(treatment_id)
+);
+
