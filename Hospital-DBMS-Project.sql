@@ -72,3 +72,14 @@ CREATE TABLE patient_treatments (
     FOREIGN KEY (treatment_id) REFERENCES treatments(treatment_id)
 );
 
+-- Doctor Treatments Table
+CREATE TABLE doctor_treatments (
+    doctor_treatment_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    doctor_id INT NOT NULL,
+    treatment_id INT NOT NULL,
+    treatment_need_consent TINYINT(1) NOT NULL,
+    treatment_date DATE NOT NULL,
+    treatment_research TEXT,
+    FOREIGN KEY (doctor_id) REFERENCES doctor(doctor_id),
+    FOREIGN KEY (treatment_id) REFERENCES treatments(treatment_id)
+);
