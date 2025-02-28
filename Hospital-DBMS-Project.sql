@@ -52,4 +52,10 @@ CREATE TABLE appointment (
     FOREIGN KEY (patient_id) REFERENCES patient(patient_id)
 );
 
-
+-- Treatments Table
+CREATE TABLE treatments (
+    treatment_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    treatment_name VARCHAR(50) NOT NULL,
+    treatment_cost DECIMAL(8, 2) NOT NULL,
+    treatment_description TEXT NOT NULL
+);
