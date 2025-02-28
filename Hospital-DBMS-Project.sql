@@ -39,3 +39,17 @@ CREATE TABLE patient (
     patient_email VARCHAR(100) UNIQUE NOT NULL,
     FOREIGN KEY (doctor_id) REFERENCES doctor(doctor_id)
 );
+
+-- Appointment Table
+CREATE TABLE appointment (
+    appointment_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    doctor_id INT NOT NULL,
+    patient_id INT NOT NULL,
+    appointment_date DATE NOT NULL,
+    appointment_time TIME NOT NULL,
+    appointment_type VARCHAR(50) NOT NULL,
+    FOREIGN KEY (doctor_id) REFERENCES doctor(doctor_id),
+    FOREIGN KEY (patient_id) REFERENCES patient(patient_id)
+);
+
+
